@@ -197,6 +197,11 @@
   //////////////////////////////////////////////////////////
   var simpleTableModules = [
     {
+      name: 'testInfo',
+      template: '<key-value-list heading="Test Info." module-name="test_info" info="Test Info"></key-value-list>'
+
+    },
+    {
       name: 'machineInfo',
       template: '<key-value-list heading="General Info." module-name="general_info" info="System Information"></key-value-list>'
     },

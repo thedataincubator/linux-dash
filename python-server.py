@@ -10,7 +10,7 @@ import argparse
 
 
 parser = argparse.ArgumentParser(description='Simple Threaded HTTP server to run linux-dash.')
-parser.add_argument('--port', metavar='PORT', type=int, nargs='?', default=80,
+parser.add_argument('--port', metavar='PORT', type=int, nargs='?', default=8090,
                     help='Port to run the server on.')
 
 modulesSubPath = '/server/modules/shell_files/'
