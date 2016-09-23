@@ -199,7 +199,6 @@
     {
       name: 'testInfo',
       template: '<key-value-list heading="Test Info." module-name="test_info" info="Test Info"></key-value-list>'
-
     },
     {
       name: 'machineInfo',
