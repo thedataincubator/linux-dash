@@ -192,6 +192,30 @@
     };
   }]);
 
+angular.module('linuxDash').directive('cpuUtilizationChart', ['server', function(server) {
+    return {
+      restrict: 'E',
+      scope: {},
+      templateUrl: 'templates/modules/cpu-utilization-chart.html',
+      link: function(scope) {
+        scope.min = 0;
+        scope.max = 100;
+
+        scope.displayValue = function(serverResponseData) {
+          return serverResponseData;
+        };
+
+        scope.utilMetrics = [{
+          name: 'Usage',
+          generate: function(serverResponseData) {
+            return serverResponseData + ' %';
+          }
+        }];
+
+      }
+    };
+  }]);
+
   //////////////////////////////////////////////////////////
   /////////////// Table Data Modules //////////////////// //
   //////////////////////////////////////////////////////////
