@@ -225,6 +225,10 @@ angular.module('linuxDash').directive('cpuUtilizationChart', ['server', function
       template: '<key-value-list heading="Test Info." module-name="test_info" info="Test Info"></key-value-list>'
     },
     {
+      name: 'testPython',
+      template: '<key-value-list heading="Test Python" module-name="python_test" info="Test Python"></key-value-list>'
+    },
+    {
       name: 'machineInfo',
       template: '<key-value-list heading="General Info." module-name="general_info" info="System Information"></key-value-list>'
     },
